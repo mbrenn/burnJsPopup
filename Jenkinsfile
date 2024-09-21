@@ -24,7 +24,7 @@ pipeline {
                 {
                     steps 
                     {
-                        sh 'dotnet-cake'
+                        sh 'dotnet cake'
                     }
                 }
 
@@ -32,7 +32,7 @@ pipeline {
                 {
                     steps
                     {
-                        sh 'dotnet-cake'
+                        sh 'dotnet cake'
                     }
                 }
             }
