@@ -1,0 +1,24 @@
+{ 
+  "compilerOptions": {
+    "noImplicitAny": false,
+    "noEmitOnError": true,
+    "removeComments": false,
+    "sourceMap": true,
+    "target": "ES2020",
+    "module": "ES2020",
+    "lib": ["es6", "DOM"],
+    "skipLibCheck": true,
+    "outDir": "build/js"
+  },
+  "compileOnSave": true,
+  "exclude": [
+    "node_modules"
+  ],
+  "include": [
+    "**/src/js/*.ts"
+  ],
+  "types": [ 
+    
+  ]
+}
+
