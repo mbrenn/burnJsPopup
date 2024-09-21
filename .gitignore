@@ -170,3 +170,4 @@ nugets/*.nupkg
 
 .nyc_output/
 .vs
+tools/
