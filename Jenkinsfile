@@ -10,6 +10,7 @@ pipeline {
                 sh """ 
                     export DOTNET_ROOT=/usr/share/dotnet/
                     npm install
+                    dotnet tool install Cake.Tool --version 4.0.0
                     dotnet tool restore 
                 """
             }
