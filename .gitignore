@@ -171,3 +171,6 @@ nugets/*.nupkg
 .nyc_output/
 .vs
 tools/
+
+# Ignore Target Package
+mbrenn*.tgz

@@ -23,5 +23,14 @@ pipeline {
                 sh 'dotnet cake'
             }
         }
+        
+
+        stage ('Package')
+        {
+            steps 
+            {
+                sh 'dotnet cake --target="Package"'
+            }
+        }
     }
 }
