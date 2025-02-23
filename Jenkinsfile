@@ -18,23 +18,9 @@ pipeline {
 
         stage ('Builds')
         {
-            parallel
-            {        
-                stage ('Build Debug') 
-                {
-                    steps 
-                    {
-                        sh 'dotnet cake'
-                    }
-                }
-
-                stage ('Build Release')
-                {
-                    steps
-                    {
-                        sh 'dotnet cake'
-                    }
-                }
+            steps 
+            {
+                sh 'dotnet cake'
             }
         }
     }
