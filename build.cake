@@ -1,4 +1,4 @@
-#addin nuget:?package=Cake.Npm&version=4.0.0
+#addin nuget:?package=Cake.Npm&version=5.0.0
 
 var jsInputSrc = new DirectoryPath("src/js");
 var jsOutputSrc = new DirectoryPath("build/js");
@@ -56,7 +56,18 @@ Task("Package")
         CopyFiles(jsInputSrc + "/*.*", dist + "/js/");
         CopyFiles(cssInputSrc + "/*.*", dist + "/css/");
         NpmPack();
+    });
 
+Task("Publish")
+    .IsDependentOn("Package")
+    .Does(() =>
+    {
+        NpmPublish(
+            new NpmPublishSettings
+            {
+                Access = NpmPublishAccess.Public
+            }
+        );
     });
 
 RunTarget(target);

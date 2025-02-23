@@ -1,5 +1,5 @@
 {
-  "name": "burnJsPopup",
+  "name": "@mbrenn/burnjspopup",
   "description": "A simple JavaScript helper to create popups in HTML",
   "version": "1.0.0",
   "author": "Martin Brenn<brenn@depon.net> (http://www.depon.net)",
